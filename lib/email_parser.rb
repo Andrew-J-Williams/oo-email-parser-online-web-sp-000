@@ -14,7 +14,7 @@ class EmailAddressParser
   end
 
   def parse # Third, in our parse method, we call our string of emails and delete the commas between the emails.
-    email_addresses.delete(',').split.uniq # Then we use split to take each email and place it in an array, separating each email with a comma.
-  end # 
+    email_addresses.delete(',').split.uniq # Then we use .split to take each email and place it in an array, separating each email with a comma.
+  end # Finally, we use .uniq to go through our array and remove any duplicate emails.
 
 end
